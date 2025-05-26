@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: #f5f5f5;
+}
+
+#load-anim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(6, 1, 27, 0.89);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+#div{
+    height: 50px;
+    width: 50px;
+    border: 5px solid white;
+    border-color: transparent transparent white;
+    border-radius: 50px;
+    margin: 7px;
+    animation: roll 1.5s linear infinite;
+}
+@keyframes roll{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.header{
+    background-color: rgb(10, 3, 32);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.nav-container{
+    display: inline-flex;
+}
+.nav-link-seperator{
+    background-color: white;
+    height: 20px;
+    width: 2px;
+    margin: 7px;
+    border-radius: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+    color: rgb(131, 112, 255);
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.set-guide-container{
+    background: linear-gradient(to right, rgb(16, 4, 54), rgb(6, 55, 53), rgb(5, 91, 46), rgb(244, 244, 8));
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.set-guide-container-text{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+.inner-container{
+    display: block;
+    padding: 30px;
+    border-radius: 40px;
+    border-end-end-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.449);
+    width: 500px;
+}
+input[type=number]{
+    width: 250px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 50px;
+    border-end-start-radius: 0px;
+    border-start-start-radius: 0px;
+}
+#output{
+    background-color: rgb(9, 14, 66);
+    display: none;
+    animation: 1s zoom linear;
+}
+@keyframes zoom {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(0.9);
+    }
+}

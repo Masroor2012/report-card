@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="shortcut icon" href="img/uh.jpg" type="image/x-icon">
+    <title>Generate report card</title>
+</head>
+<body>
+    
+    <section id="load-anim">
+        <div id="div"></div>
+    </section>
+
+    <header class="header">
+        <div class="logo"><img src="img/Kampo_Logo_on_Blue_Backdrop-removebg-preview.png" width="140px"></div>
+        <div class="nav-container">
+        <a href="fomcal.html" class="nav-link">
+            Fomular Calculator
+        </a>
+        <div class="nav-link-seperator"></div>
+        <a href="Quizgame.html" class="nav-link">
+            Quiz Game
+        </a>
+        <div class="nav-link-seperator"></div>
+        <a href="Sschool.html" class="nav-link">
+            Search a School
+        </a>
+        <div class="nav-link-seperator"></div>
+        <a href="about.html" class="nav-link">
+            Info
+        </a>
+        </div>
+    </header>
+    <main>
+        <div class="set-guide-container">
+        <h1 class="set-guide-container-text">Set your grading guide</h1>
+            <div class="inner-container">
+                <input type="number" placeholder="Enter limit mark for A" id="grade1val"><br>
+                <input type="number" placeholder="Enter limit mark for B" id="grade2val"><br>
+                <input type="number" placeholder="Enter limit mark for C" id="grade3val"><br>
+                <input type="number" placeholder="Enter limit mark for D" id="grade4val"><br>
+                <input type="number" placeholder="Enter limit mark for F" id="grade5val"><br>
+                <input type="button" value="Set Guide" onclick="set()">
+                <div id="output">
+                    <h2 class="done-text">Done ✔️</h2>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <script src="js/start.js"></script>
+</body>
+</html>
